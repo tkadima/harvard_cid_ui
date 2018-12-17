@@ -1,0 +1,71 @@
+.dropdown-wrapper {
+  border: 1px solid darkgray;
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+}
+
+.dropdown-header {
+  display: flex;
+}
+
+.dropdown-header-title {
+  margin-left: 20px;
+  width: 500px;
+}
+
+.dropdown-list {
+  height: 350px;
+  list-style-type: none;
+  margin: 0 auto;
+  overflow: auto;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.dropdown-list-item {
+  &--region {
+    cursor: default;
+    margin-left: 0;
+  }
+
+  &--state {
+    cursor: default;
+    margin-left: 20px;
+  }
+
+  &--county {
+    cursor: pointer;
+    padding-left: 40px;
+
+    &:hover {
+      background-color: #E7F0F6;
+    }
+  }
+}
+
+.dropdown-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #A6A6A6;
+  margin-left: 60px;
+
+
+  &--down {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdown-clear {
+  margin-left: 20px;
+  padding: 0;
+}
+
+.dropdown-search {
+  border: none;
+  font-size: inherit;
+}
